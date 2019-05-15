@@ -1,0 +1,47 @@
+uuid: 6bf33ed7-74a0-4bc7-886a-9040e5dfb1e1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.publicite
+    - field.field.block_content.publicite.field_image
+  module:
+    - field_layout
+    - layout_discovery
+    - remote_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: block_content.publicite.default
+targetEntityType: block_content
+bundle: publicite
+mode: default
+content:
+  field_image:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      placeholder_alt: ''
+      placeholder_width: ''
+      placeholder_height: ''
+    third_party_settings: {  }
+    type: remote_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

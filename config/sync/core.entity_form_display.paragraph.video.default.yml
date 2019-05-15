@@ -1,0 +1,56 @@
+uuid: 716eb36c-57ed-4159-baee-6583099ae219
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_video
+    - field.field.paragraph.video.field_video_droite
+    - paragraphs.paragraphs_type.video
+  module:
+    - field_layout
+    - inline_entity_form
+    - radix_layouts
+third_party_settings:
+  field_layout:
+    id: radix_phelan
+    settings: {  }
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_video:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: column1
+  field_video_droite:
+    weight: 1
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: column2
+hidden:
+  created: true
+  status: true

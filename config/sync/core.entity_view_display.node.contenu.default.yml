@@ -1,0 +1,37 @@
+uuid: 2520935f-fd23-42c8-9a16-cd4844047a2c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.contenu.field_contenu
+    - node.type.contenu
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.contenu.default
+targetEntityType: node
+bundle: contenu
+mode: default
+content:
+  field_contenu:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

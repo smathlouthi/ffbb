@@ -1,0 +1,9 @@
+uuid: 4f2d55ce-dab4-40ae-abd1-07cdc6022f27
+langcode: fr
+status: true
+dependencies: {  }
+id: images
+label: Images
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

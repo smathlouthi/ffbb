@@ -1,0 +1,29 @@
+uuid: 5f147e7f-b41d-4915-9b91-39c1a145daba
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.publicite
+    - field.field.block_content.publicite.field_image
+  module:
+    - field_layout
+    - layout_discovery
+    - remote_image
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: block_content.publicite.default
+targetEntityType: block_content
+bundle: publicite
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: remote_image
+    region: content
+hidden:
+  langcode: true

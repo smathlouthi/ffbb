@@ -1,0 +1,37 @@
+uuid: 8eab35e9-44cf-40b6-9019-e26804bf7da3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titre_et_texte.field_texte
+    - field.field.paragraph.titre_et_texte.field_titre
+    - paragraphs.paragraphs_type.titre_et_texte
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.titre_et_texte.default
+targetEntityType: paragraph
+bundle: titre_et_texte
+mode: default
+content:
+  field_texte:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_titre:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

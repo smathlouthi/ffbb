@@ -1,0 +1,30 @@
+uuid: 4c11b632-35be-42cf-a1c8-356376537b52
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.partenaire_bloc
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - bartik
+id: views_block__partenaire_bloc_block_1
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: 'views_block:partenaire_bloc-block_1'
+settings:
+  id: 'views_block:partenaire_bloc-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

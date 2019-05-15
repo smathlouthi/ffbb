@@ -1,0 +1,39 @@
+uuid: fea09e5e-fe60-4e33-9b6c-ac4b05f68086
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_et_texte.field_image
+    - field.field.paragraph.image_et_texte.field_texte
+    - paragraphs.paragraphs_type.image_et_texte
+  module:
+    - field_layout
+    - image
+    - radix_layouts
+    - text
+third_party_settings:
+  field_layout:
+    id: radix_phelan
+    settings: {  }
+id: paragraph.image_et_texte.default
+targetEntityType: paragraph
+bundle: image_et_texte
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: column1
+  field_texte:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: column2
+hidden: {  }

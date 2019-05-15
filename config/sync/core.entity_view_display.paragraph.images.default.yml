@@ -1,0 +1,51 @@
+uuid: 329090c4-34e4-4873-938e-2e7588607888
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.images.field_image
+    - field.field.paragraph.images.field_image_centre
+    - field.field.paragraph.images.field_image_droite
+    - paragraphs.paragraphs_type.images
+    - responsive_image.styles.responsive
+  module:
+    - field_layout
+    - radix_layouts
+    - responsive_image
+third_party_settings:
+  field_layout:
+    id: radix_mccoppin
+    settings: {  }
+id: paragraph.images.default
+targetEntityType: paragraph
+bundle: images
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: responsive
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: column1
+  field_image_centre:
+    weight: 1
+    label: hidden
+    settings:
+      responsive_image_style: responsive
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: column2
+  field_image_droite:
+    type: responsive_image
+    weight: 2
+    region: column3
+    label: hidden
+    settings:
+      responsive_image_style: responsive
+      image_link: ''
+    third_party_settings: {  }
+hidden: {  }

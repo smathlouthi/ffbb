@@ -1,0 +1,90 @@
+uuid: 2403ed14-1ba8-46e7-bb61-add019b451e5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.contenu
+  module:
+    - content_moderation
+_core:
+  default_config_hash: Ln7YAg2WXZ-5wn9ib-v9qOKFxF2YZLnwSKtX-V455hE
+id: editorial
+label: Editorial
+type: content_moderation
+type_settings:
+  states:
+    a_valider:
+      published: false
+      default_revision: false
+      label: 'A valider'
+      weight: -1
+    archived:
+      label: Archived
+      weight: 1
+      published: false
+      default_revision: true
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -2
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 0
+  transitions:
+    a_valider_draft:
+      label: 'A valider -> Draft'
+      from:
+        - a_valider
+      to: draft
+      weight: 7
+    a_valider_pulblie:
+      label: 'A valider -> pulblié'
+      from:
+        - a_valider
+      to: published
+      weight: 6
+    archive:
+      label: Archive
+      from:
+        - published
+      to: archived
+      weight: 2
+    archived_draft:
+      label: 'Restore to Draft'
+      from:
+        - archived
+      to: draft
+      weight: 3
+    archived_published:
+      label: Restore
+      from:
+        - archived
+      to: published
+      weight: 4
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+    draft_a_valider:
+      label: 'Draft -> A valider'
+      from:
+        - draft
+      to: a_valider
+      weight: 5
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+  entity_types:
+    node:
+      - contenu
+  default_moderation_state: draft

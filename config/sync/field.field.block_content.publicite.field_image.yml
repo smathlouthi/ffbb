@@ -1,0 +1,26 @@
+uuid: c63994ed-c02e-4b8f-9796-f75d30644ec4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.publicite
+    - field.storage.block_content.field_image
+  module:
+    - remote_image
+id: block_content.publicite.field_image
+field_name: field_image
+entity_type: block_content
+bundle: publicite
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: '17'
+  alt_field: 1
+  alt_field_required: 0
+  title_field: 1
+  title_field_required: 0
+field_type: remote_image

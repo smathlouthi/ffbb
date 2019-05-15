@@ -1,0 +1,21 @@
+uuid: 14707e73-5cf2-465b-9376-3685db51f139
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texte
+    - paragraphs.paragraphs_type.image_et_texte
+  module:
+    - text
+id: paragraph.image_et_texte.field_texte
+field_name: field_texte
+entity_type: paragraph
+bundle: image_et_texte
+label: Texte
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

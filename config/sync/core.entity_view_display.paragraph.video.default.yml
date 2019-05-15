@@ -1,0 +1,39 @@
+uuid: 6ffd9881-aef7-44a2-8180-bd2aabb4dc84
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_video
+    - field.field.paragraph.video.field_video_droite
+    - paragraphs.paragraphs_type.video
+  module:
+    - field_layout
+    - radix_layouts
+third_party_settings:
+  field_layout:
+    id: radix_phelan
+    settings: {  }
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_video:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: column1
+  field_video_droite:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: column1
+hidden: {  }

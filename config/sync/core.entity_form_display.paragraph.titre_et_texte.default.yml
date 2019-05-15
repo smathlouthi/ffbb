@@ -1,0 +1,40 @@
+uuid: a27a807f-a930-4bf8-b721-b5f40bf7b258
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.titre_et_texte.field_texte
+    - field.field.paragraph.titre_et_texte.field_titre
+    - paragraphs.paragraphs_type.titre_et_texte
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: paragraph.titre_et_texte.default
+targetEntityType: paragraph
+bundle: titre_et_texte
+mode: default
+content:
+  field_texte:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_titre:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,38 @@
+uuid: 36e61d36-76d7-4af3-ba32-8a94baa86198
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_centre
+    - paragraphs.paragraphs_type.images
+  module:
+    - image
+id: paragraph.images.field_image_centre
+field_name: field_image_centre
+entity_type: paragraph
+bundle: images
+label: 'Image centre'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: paragraphs/image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

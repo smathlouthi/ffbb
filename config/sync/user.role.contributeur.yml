@@ -1,0 +1,23 @@
+uuid: 914b7004-e90a-4f36-bc4d-ccd3989cba0f
+langcode: fr
+status: true
+dependencies: {  }
+id: contributeur
+label: Contributeur
+weight: -8
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access toolbar'
+  - 'create contenu content'
+  - 'create publicite block content'
+  - 'delete own contenu content'
+  - 'edit own contenu content'
+  - 'use editorial transition a_valider_draft'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition draft_a_valider'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view the administration theme'

@@ -1,0 +1,26 @@
+uuid: 7887c0fb-b0f9-45f5-b504-496a95b37ce5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: home_et_type_de_contenu_contenu_
+label: 'Home et type de contenu "contenu"'
+logic: or
+conditions:
+  b5906e7d-0626-4ce0-8c7e-da1eb741683a:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+    uuid: b5906e7d-0626-4ce0-8c7e-da1eb741683a
+  58204bd6-bc8e-4f71-80f0-85c2ad91a544:
+    id: node_type
+    bundles:
+      contenu: contenu
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 58204bd6-bc8e-4f71-80f0-85c2ad91a544
+allow_other_conditions: true

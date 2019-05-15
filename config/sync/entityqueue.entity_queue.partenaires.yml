@@ -1,0 +1,25 @@
+uuid: 4a29896f-2af0-4d9f-8549-685ebf2cf3ad
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: partenaires
+label: Partenaires
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      partenaires: partenaires
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 3
+  act_as_queue: true
+  reverse_in_admin: false

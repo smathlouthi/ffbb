@@ -1,0 +1,14 @@
+uuid: ca09de49-4412-438d-8f81-f9ac24813d34
+name: ffb
+mail: smathlouthi@ffbb.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

@@ -1,0 +1,14 @@
+uuid: 03879f15-b34b-4c6a-ae34-b78463675463
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.contributeur
+  module:
+    - user
+id: user_add_role_action.contributeur
+label: 'Ajouter le rôle Contributeur aux utilisateurs sélectionnés'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: contributeur

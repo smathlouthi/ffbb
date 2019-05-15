@@ -1,0 +1,37 @@
+uuid: 531187cb-57f3-4291-b51a-b0e01c313970
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.partenaires.field_image
+    - node.type.partenaires
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.partenaires.default
+targetEntityType: node
+bundle: partenaires
+mode: default
+content:
+  field_image:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
