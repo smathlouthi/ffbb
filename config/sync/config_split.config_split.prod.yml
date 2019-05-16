@@ -1,0 +1,17 @@
+uuid: ac3149a7-aafb-4249-a76a-23b0b867df58
+langcode: fr
+status: false
+dependencies: {  }
+id: prod
+label: PROD
+description: ''
+folder: ''
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.file
+  - system.site
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

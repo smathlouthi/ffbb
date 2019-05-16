@@ -14,14 +14,14 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_split: 0
   contact: 0
   content_access: 0
   content_moderation: 0
   contextual: 0
   datetime: 0
   dblog: 0
-  devel: 0
-  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -34,7 +34,6 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
-  kint: 0
   language: 0
   layout_discovery: 0
   link: 0
@@ -62,7 +61,6 @@ module:
   views_slideshow: 0
   views_slideshow_cycle: 0
   views_ui: 0
-  webprofiler: 0
   workflows: 0
   menu_link_content: 1
   views: 10
