@@ -33,6 +33,7 @@
         "drupal/radix_layouts": "^4.1",
         "drupal/remote_image": "^1.0@beta",
         "drupal/views_slideshow": "^4.6",
+        "drupal/webform": "^5.2",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
