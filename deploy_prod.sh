@@ -4,7 +4,7 @@
 drush sset system.maintenance_mode = 1
 
 #recuperer le code
-git pull origine matser
+git pull origine master
 
 
 #ajouter vider le dossier vendor
