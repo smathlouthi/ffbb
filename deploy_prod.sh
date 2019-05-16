@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 #activer mode maintenance
 drush sset system.maintenance_mode = 1
